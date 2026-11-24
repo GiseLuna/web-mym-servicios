@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyM Servicios Sanitarios | Trabajos realizados y presupuestos</title>
+  <meta name="description" content="Sanitarismo, Desagues Pluviales, instalaciones de gas y calefacción. Mirá trabajos realizados y pedí tu presupuesto por WhatsApp." />
+  <meta name="theme-color" content="#0f2742" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/logomym.png" />
+  <meta property="og:title" content="MyM sanitaristas | Trabajos realizados" />
+  <meta property="og:description" content="Mirá trabajos realizados y pedí tu presupuesto por WhatsApp." />
+  <link rel="icon" href="img/logomym.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="brand" id="brand"></a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"></button>
+      <nav id="menu" class="nav__menu" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos realizados</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn--accent" data-wa target="_blank" rel="noopener noreferrer">Solicitar presupuesto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 id="heroTitle"></h1>
+          <p id="heroText"></p>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="#trabajos">Ver trabajos realizados</a>
+            <a class="btn btn--ghost" data-wa target="_blank" rel="noopener noreferrer"><span id="waIconBtn"></span> Contactar por WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <img id="heroImg" alt="Logo MyM sanitaristas" width="800" height="600" fetchpriority="high" />
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section section--gray">
+      <div class="container reveal">
+        <h2>Servicios</h2>
+        <ul class="services" id="services"></ul>
+      </div>
+    </section>
+
+    <section id="trabajos" class="section">
+      <div class="container reveal">
+        <h2>Trabajos realizados</h2>
+        <p class="lead">Tocá un trabajo para ver todas sus fotos.</p>
+        <div class="filters" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section section--gray">
+      <div class="container about reveal" id="about"></div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand" id="fBrand"></p>
+        <p class="footer__tag" id="fTag"></p>
+      </div>
+      <ul class="footer__list" id="fList"></ul>
+    </div>
+    <p class="container footer__legal" id="fLegal"></p>
+  </footer>
+
+  <a class="wa" data-wa target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp" id="waFloat"></a>
+
+  <script src="js/config.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

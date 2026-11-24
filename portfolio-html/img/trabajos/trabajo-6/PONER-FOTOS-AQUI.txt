@@ -1,0 +1,2 @@
+Poné acá las fotos del trabajo 6, con los nombres foto-1.jpg, foto-2.jpg, foto-3.jpg, foto-4.jpg.
+Si tenés más o menos fotos, editá js/projects.js.

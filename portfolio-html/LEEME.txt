@@ -1,0 +1,20 @@
+PORTFOLIO - SERVICIOS DE SANITARISTA (HTML + CSS + JavaScript)
+
+CÓMO VERLO
+Hacé doble clic en index.html. No hace falta instalar nada.
+
+QUÉ EDITAR
+- js/config.js    -> nombre, logo, WhatsApp, Instagram, mail, teléfono, zona, textos de Inicio y Sobre mí
+- js/projects.js  -> los 8 trabajos (títulos, fechas, categorías, descripciones)
+- img/trabajos/trabajo-1 ... trabajo-8 -> las fotos de cada galería (foto-1.jpg, foto-2.jpg ...)
+- img/            -> tus fotos y el logo
+- css/styles.css  -> colores y estilos (variables al principio del archivo)
+
+El número de WhatsApp va como 549 + código de área (sin 0) + número (sin 15).
+
+AGREGAR UN TRABAJO
+Copiá un bloque { ... } de js/projects.js, pegalo en la lista (separado por coma)
+y cambiá: id (único), title, date (AAAA-MM), category, description y photos.
+Se ordena solo por fecha, del más reciente al más antiguo.
+
+CONSEJO: antes de subir las fotos, achicalas a ~1600 px de ancho y en JPG/WebP (squoosh.app).
